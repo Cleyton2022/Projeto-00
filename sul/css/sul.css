@@ -1,0 +1,289 @@
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+    
+    .logo{
+    
+    float: left;
+    position: relative;
+    }
+    .logo img{
+    width: 400px;
+    height: 400px;
+    
+    }
+    
+    .header {
+        overflow: hidden;
+        background-color: #9d0208;
+        padding: 10px 10px;
+    
+      }
+    
+      
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+        margin: 0px ;
+      }
+    
+     .header .redesSc{
+    float: right !important ;
+      }
+      
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0px;
+      }
+      
+      .header a:hover {
+        background-color: rgb(235, 211, 0);
+        color: black;
+      }
+      .header-right {
+        float: right;
+      }
+      
+      @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .header-right {
+          float: none;
+        }
+      }
+    
+      .imgdecora{
+    padding-top: 0.5%;
+    justify-content: center;
+      }
+      .imgdecora img{
+    width: 100% !important;
+    
+      }
+    
+      .txtintroducao{
+    text-align: center;
+    
+      }
+    
+      .txtintroducao h1 strong{
+    color: #9d0208;
+      }
+    
+    .containers{
+        text-align: center;
+    }
+    
+    .flip-card img{
+    padding-top: 15%;
+    
+    }
+    
+    
+      .flip-card {
+        background-color: transparent;
+        width: 600px;
+        height: 400px;
+        border: 1px solid #ffffff;
+        perspective: 1000px; 
+        display: inline-flex;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        
+      }
+      
+    
+      .flip-card-front {
+        background-color: rgb(255, 255, 255);
+        color: black;
+      }
+      
+    
+      .flip-card-back {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        transform: rotateY(180deg);
+        
+      }
+  
+  
+  
+  .txtdesc{
+  display: inline-flex;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    .row{
+        text-align: center;
+          justify-content: center;
+          margin: 0;
+          padding: 0;
+    }
+    
+    
+      .column { 
+        border: 1px solid rgb(248, 248, 248);
+        text-align: center;
+        display: inline-table;
+        margin: 100px;
+      }
+      
+      .row:after {
+        content: "";
+        display: flex;
+        clear: both;
+      }
+      
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+        width: 400px;
+        height: 250px;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: flex;
+          margin-bottom: 20px;
+        }
+      }
+    
+    
+      .column img{
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgb(248, 248, 248);
+    
+      }
+    
+    .colunastxt{
+      display: inline-table;
+    position: relative;
+    padding-left: 10%;
+    }
+    
+    
+    
+      .colunastxt h3{
+        text-align: center;
+        width: 300px;
+        color: #000000;
+    }
+    
+    .colunastxt p {
+      
+        text-align: center;
+        width: 300px;
+    }
+    
+    .footers{
+    background-image: url('../imagemSul/footer.png');
+    color: #ffffff;
+    
+    }
+    
+    .rodapefim{
+    background-image: url('../imagemSul/footer2.png');
+    color: #f1f1f1;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+    }
+    
+    
+    .clock {
+      color: #000000 !important;
+    }
+    
+    .clock:before {
+      content: '';
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      background-image: url('../imagemSul/clock.png');
+      float: left;
+      background-repeat: no-repeat;
+      padding-left: 5px;
+    }
+    .local:before,
+    .emailico:before,
+    .email:before,
+    .telefoneico:before {
+        content: '';
+        width: 17px;
+        height: 24px;
+        display: inline-block;
+        float: left;
+        background-repeat: no-repeat;
+        padding-left: 5px;
+    }
+    
+    .local:before {
+        background-image: url('../imagemSul/local.png');
+    }
+    
+    .emailico:before {
+        background-image: url('../imagemSul/emailico.png');
+    }
+    
+    .telefoneico:before {
+        background-image: url('../imagemSul/telefoneico.png');
+    }
+    
+    .email:before{
+    background-image: url('../imagemSul/email.png');
+    
+    }
